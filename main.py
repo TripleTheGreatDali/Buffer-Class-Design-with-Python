@@ -32,8 +32,11 @@ root.configure(bg='black')
 
 # 1st Display
 w0 = Tkinter.Canvas(root, width=400, height=30, bg='Blue')
-w0.pack()
 w0.place(x=40, y=40)
+label00 = Tkinter.Label(root, text='Initialization Buffer in Source Code')
+label00.config(font=('helvetica', 10))
+w0.create_window(202, 19, window=label00)
+
 
 # 2nd Display
 w = Tkinter.Canvas(root, width=400, height=300, bg='Blue')
